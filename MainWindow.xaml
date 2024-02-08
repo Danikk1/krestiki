@@ -1,0 +1,31 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="krestiki.MainWindow"
+    Title="Крестики нолики" Height="400" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.ColumnSpan="3" x:Name="NewGame" Content="Новая игра" Click="NewGame_Click" FontSize="20" Margin="0,5,0,0" />
+
+        <Button x:Name="btn1" Grid.Row="1" Grid.Column="0" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn2" Grid.Row="1" Grid.Column="1" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn3" Grid.Row="1" Grid.Column="2" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn4" Grid.Row="2" Grid.Column="0" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn5" Grid.Row="2" Grid.Column="1" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn6" Grid.Row="2" Grid.Column="2" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn7" Grid.Row="3" Grid.Column="0" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn8" Grid.Row="3" Grid.Column="1" Click="Button_Click" FontSize="20"/>
+        <Button x:Name="btn9" Grid.Row="3" Grid.Column="2" Click="Button_Click" FontSize="20"/>
+    </Grid>
+</Window>
